@@ -1,0 +1,18 @@
+body {
+    background: rgb(14, 66, 14);
+}
+.card-img {
+    width: 300px;
+    position: absolute;
+}
+
+.end-msg {
+    background-color: rgb(172, 2, 2);
+    border: solid 2px white;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+    width: 500px;
+    padding: 0.5em;
+    text-align: center;
+}

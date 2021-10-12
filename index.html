@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="app.css" rel="stylesheet">
+    <title>Asynch Code</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <form>
+                    <legend>Number Facts</legend>
+                    <div class="mb-3">
+                        <label for="numberOneInput" class="form-label">Enter your first favorite number</label>
+                        <input type="number" id="numberOneInput" class="form-control" placeholder="Your 1st number ..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="numberTwoInput" class="form-label">Enter your second favorite number</label>
+                        <input type="number" id="numberTwoInput" class="form-control" placeholder="Your 2nd number ..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="numberTreeInput" class="form-label">Enter your third favorite number</label>
+                        <input type="number" id="numberThreeInput" class="form-control" placeholder="Your 3rd number ..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="numberFourInput" class="form-label">Enter your fourth favorite number</label>
+                        <input type="number" id="numberFourInput" class="form-control" placeholder="Your 4th number ..." required>
+                    </div>
+                    <button id="sbmBtn" type="submit" class="btn btn-primary">Get facts</button>
+                </form>                   
+            </div>
+            <div class="col-md-5">
+                <div class="m-3">
+                    <p class="lead">1. Here is a single fact about your first favorite number:</p> 
+                    <p class="facts" id="first-result"></p>                    
+                </div>
+                <div class="m-3">
+                    <p class="lead">2. Interesting facts about all four your favorite numbers:</p> 
+                    <p class="facts" id="second-result"></p>                    
+                </div>
+                <div class="m-3">
+                    <p class="lead">3. More facts about your first favorite number:</p> 
+                    <p class="facts" id="third-result"></p>                    
+                </div>
+
+            </div>
+        </div>
+     
+    </div>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
