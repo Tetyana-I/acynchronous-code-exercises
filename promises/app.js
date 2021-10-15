@@ -13,6 +13,7 @@ $('#sbmBtn').on('click', function handleSubmit(evt) {
     let num2 = $("#numberTwoInput").val();
     let num3 = $("#numberThreeInput").val();
     let num4 = $("#numberFourInput").val();
+    
     // first task
     axios.get(`http://numbersapi.com/${num1}?json`)
     .then(res => {
@@ -22,12 +23,12 @@ $('#sbmBtn').on('click', function handleSubmit(evt) {
     .catch(err => {
         console.log("No facts for you!", err);
     })
+    
     // second task
     axios.get(`http://numbersapi.com/${num1},${num2},${num3},${num4}`)
     .then(multi => {
         const taskTwoResult = document.getElementById("second-result");
         taskTwoResult.innerHTML = `${multi.data[num1]} <br> ${multi.data[num2]} <br> ${multi.data[num3]} <br> ${multi.data[num4]}`;
-        console.log("It's really interesting that ", multi.data['13']);
     })
     .catch(err => {
         console.log("No facts for you!", err);
